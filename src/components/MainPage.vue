@@ -102,15 +102,15 @@ export default {
       
     setBackground(){
       if(this.getDate().getHours() > 6 && this.getDate().getHours()  < 18){
-        return 'url(../public/day-pc.jpg)';
+        return 'url(../assets/day-pc.jpg)';
       }
       if(this.getDate().getHours() >= 18 && this.getDate().getHours()  < 22){
         
-        return 'url(../public/evening-pc.jpg)'
+        return 'url(./assets/evening-pc.jpg)'
       }
       else{
         
-        return 'url(../public/night-pc.jpg)';
+        return 'url(../assets/night-pc.jpg)';
         
       }
     },
@@ -131,7 +131,7 @@ export default {
       margin: 0 auto;
       color: #fff;
       min-height: 100vh;
-      background: url(../public/night-pc.jpg) no-repeat;
+      /* background: url(../public/night-pc.jpg) no-repeat; */
       background-size: cover;
       text-align: center;
       font-size: 20px;
