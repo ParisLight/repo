@@ -155,5 +155,7 @@ export default {
         .night {
           background: url(@/assets/night-pc.jpg) no-repeat ;
           background-size: cover;
+          height: auto;
+          width: auto;
         }
 </style>
