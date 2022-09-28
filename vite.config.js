@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [vue()],
 
 
-  base: '/weatherApp/',
+  
 	build: {
 		outDir: './docs',
 	},
