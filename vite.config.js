@@ -9,6 +9,8 @@ export default defineConfig({
   base: '/vite-project/',
 	build: {
 		outDir: './docs',
+    "build": "vite build",
+    "preview": "vite preview"
 	},
   resolve: {
     alias: {
