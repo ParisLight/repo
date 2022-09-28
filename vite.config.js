@@ -6,11 +6,10 @@ export default defineConfig({
   plugins: [vue()],
 
 
-  base: '/vite-project/',
+  base: '/repo/',
 	build: {
 		outDir: './docs',
-    "build": "vite build",
-    "preview": "vite preview"
+    
 	},
   resolve: {
     alias: {
