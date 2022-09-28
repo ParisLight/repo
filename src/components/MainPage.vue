@@ -153,9 +153,7 @@ export default {
         }
     
         .night {
-          background: url(@/assets/mobile-evening.jpg) no-repeat ;
+          background: url(@/assets/night-pc.jpg) no-repeat ;
           background-size: cover;
-          height: auto;
-          width: auto;
         }
 </style>
