@@ -143,17 +143,17 @@ export default {
     }
 
         .day {
-          background: url(@/assets/day-pc.jpg) no-repeat top center;
+          background: url(@/assets/day-pc.jpg) no-repeat ;
           background-size: cover;
         }
     
         .evening {
-          background: url(@/assets/evening-pc.jpg) no-repeat top center;
+          background: url(@/assets/evening-pc.jpg) no-repeat ;
           background-size: cover;
         }
     
         .night {
-          background: url(@/assets/night-pc.jpg) no-repeat top center;
+          background: url(@/assets/night-pc.jpg) no-repeat ;
           background-size: cover;
         }
 </style>
