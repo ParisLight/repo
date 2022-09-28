@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [vue()],
 
 
-  base: '/weather/',
+  base: '/vite-project/',
 	build: {
 		outDir: './docs',
 	},
