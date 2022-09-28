@@ -84,11 +84,11 @@ export default {
 
 	.left__arr{
 		position: absolute;
-		left: -50px;
+		left: -10px;
 	}
 	.right__arr{
 		position: absolute;
-		right: -80px;
+		right: -20px;
 	}
 
 	@media (max-width: 1170px) {
