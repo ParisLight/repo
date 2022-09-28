@@ -18,15 +18,15 @@ export default {
 .arrow {
 	cursor: pointer;
 	height: 120px;
-	width: 80px;
+	width: 50px;
 	position: relative;
-	margin: 20px;
+	/* margin: 20px; */
 }
 .arrow-top, 
 .arrow-bottom {
 	background: rgb(255, 255, 255);
-	height: 11px;
-	left: -10px;
+	height: 10px;
+	left: 0px;
 	position: absolute;
 	top: 60px;
 	width: 40px;

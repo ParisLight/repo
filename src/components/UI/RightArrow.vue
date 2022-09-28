@@ -1,7 +1,10 @@
 <template>
 	<div class="arrow">
-		<div class="arrow-top"></div>
-		<div class="arrow-bottom"></div>
+		<div class="arrow">
+			<div class="arrow-top"></div>
+			<div class="arrow-bottom"></div>
+		</div>
+		
 	</div>
 </template>
 
@@ -15,15 +18,15 @@ export default {
 .arrow {
 	cursor: pointer;
 	height: 120px;
-	width: 80px;
+	width: 50px;
 	position: relative;
-	margin: 20px;
+	/* margin: 20px; */
 }
 .arrow-top, 
 .arrow-bottom {
 	background: rgb(255, 255, 255);
 	height: 10px;
-	left: 20px;
+	right: 0px;
 	position: absolute;
 	top: 60px;
 	width: 40px;

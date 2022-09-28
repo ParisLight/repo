@@ -36,10 +36,13 @@ export default {
 </script>
 
 <style scoped>
-	.form-input{
+.form{
 		margin-top: 50px;
 	}
 
-
-	
+		@media (max-width: 820px) {
+			.form{
+				margin-top: 0;
+			}
+		}
 </style>

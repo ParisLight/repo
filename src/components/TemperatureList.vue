@@ -1,4 +1,4 @@
-<template >
+<template>
 	<div class="temperature__wrapper" v-if="dailyWeather.length > 0">
 		<div class="container">
 			<div class="cards" >
@@ -80,15 +80,16 @@ export default {
 		grid-template-columns: repeat(8, 1fr);
 		position: relative;
 		gap: 20px;
+		padding: 0 35px;
 	}
 
 	.left__arr{
 		position: absolute;
-		left: -10px;
+		left: 0px;
 	}
 	.right__arr{
 		position: absolute;
-		right: -20px;
+		right: 0px;
 	}
 
 	@media (max-width: 1170px) {
@@ -106,8 +107,14 @@ export default {
 	@media (max-width: 820px) {
 		.cards{
 			grid-template-columns: repeat(2, 1fr);
+			gap: 10px;
 		}
 	}
 
-		
+		@media (max-width: 320px) {
+			.cards {
+				grid-template-columns: repeat(1, 1fr);
+				gap: 10px;
+			}
+		}
 </style>

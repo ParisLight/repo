@@ -138,7 +138,7 @@ export default {
     }
     .container{
       margin: 0 auto;
-      padding: 0 60px;
+      padding: 0 15px;
       text-align: center;
     }
 
