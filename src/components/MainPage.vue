@@ -1,6 +1,6 @@
 <template>
     <div class="app"
-      :style="{'background-image': setBackground}"
+      :class="setBackground"
     > 
     <Form
       @search="searchCity"
@@ -14,6 +14,7 @@
       :page="page"
       :lastPage="lastPage"
     />
+    
     </div>
   </template>
   
@@ -102,14 +103,14 @@ export default {
       
     setBackground(){
       if(this.getDate().getHours() > 6 && this.getDate().getHours()  < 18){
-        return 'url(src/assets/day-pc.jpg)';
+        return 'day';
       }
       if(this.getDate().getHours() >= 18 && this.getDate().getHours()  < 22){
         
-        return 'url(src/assets/evening-pc.jpg)'
+        return 'evening'
       }
       else{
-        return 'url(src/assets/night-pc.jpg)';
+        return 'night';
       }
     },
   },
@@ -117,8 +118,7 @@ export default {
 </script>
   
 <style>
-    
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
   *{
     box-sizing: border-box;
     margin: 0;
@@ -129,19 +129,28 @@ export default {
       margin: 0 auto;
       color: #fff;
       min-height: 100vh;
-      /* background: url(../assets/day-pc.jpg) no-repeat; */
       background-size: cover;
       text-align: center;
       font-size: 20px;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
-     
-      
+      min-height: 100vh;      
     }
     .container{
       margin: 0 auto;
       padding: 0 60px;
       text-align: center;
     }
-  </style>
+
+        .day {
+          background: url(@/assets/day-pc.jpg);
+        }
+    
+        .evening {
+          background: url(@/assets/evening-pc.jpg);
+        }
+    
+        .night {
+          background: url(@/assets/night-pc.jpg);
+        }
+</style>
