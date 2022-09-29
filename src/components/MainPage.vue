@@ -49,7 +49,7 @@ export default {
 
   methods: {
     async searchCity(city){
-      this.city = city;
+      this.city = city.trim();
       localStorage.setItem('city', city);
       await this.loadWeather();
     },
